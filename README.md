@@ -51,7 +51,7 @@ the way.)
 
 
 ## How to use?
-You can use this project online by going to this [link]('http://lean-svg.netlify.com')
+You can use this project online by going to this [link](https://lean-svg.netlify.com/)
 
 or 
 
