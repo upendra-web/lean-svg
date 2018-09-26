@@ -7,7 +7,7 @@
     <img src="/static/img/logo.png" alt="" id="logo" @click="main = !main">
 
     <transition name="fade">
-      <span class="btn btn-primary rounded ml3" @click="startTut" v-show="!main">Tutorial</span>
+      <span class="btn btn-primary rounded ml3" @click="startTut" v-show="!main" id="tut">Tutorial</span>
     </transition>
 
     <transition name="fade">
@@ -176,6 +176,10 @@
   .dropdown:hover .dropdown-content {
     display: flex;
     opacity: 1
+  }
+
+  #tut {
+    border-radius: 36px
   }
 
 </style>
