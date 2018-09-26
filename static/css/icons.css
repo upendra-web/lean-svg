@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'lean-svg';
+  src:  url('fonts/lean-svg.eot?gyetb1');
+  src:  url('fonts/lean-svg.eot?gyetb1#iefix') format('embedded-opentype'),
+    url('fonts/lean-svg.ttf?gyetb1') format('truetype'),
+    url('fonts/lean-svg.woff?gyetb1') format('woff'),
+    url('fonts/lean-svg.svg?gyetb1#lean-svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ls-"], [class*=" ls-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'lean-svg' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ls-code:before {
+  content: "\e900";
+}
+.ls-arrow-down:before {
+  content: "\e901";
+}
+.ls-arrow-left:before {
+  content: "\e902";
+}
+.ls-arrow-right:before {
+  content: "\e903";
+}
+.ls-arrow-up:before {
+  content: "\e904";
+}
+.ls-check:before {
+  content: "\e905";
+}
+.ls-clipboard:before {
+  content: "\e906";
+}
+.ls-download:before {
+  content: "\e907";
+}
+.ls-edit:before {
+  content: "\e908";
+}
+.ls-facebook:before {
+  content: "\e909";
+}
+.ls-filter:before {
+  content: "\e90a";
+}
+.ls-folder:before {
+  content: "\e90b";
+}
+.ls-github:before {
+  content: "\e90c";
+}
+.ls-grid:before {
+  content: "\e90d";
+}
+.ls-home:before {
+  content: "\e90e";
+}
+.ls-image:before {
+  content: "\e90f";
+}
+.ls-maximize:before {
+  content: "\e910";
+}
+.ls-menu:before {
+  content: "\e911";
+}
+.ls-minimize:before {
+  content: "\e912";
+}
+.ls-minus:before {
+  content: "\e913";
+}
+.ls-plus:before {
+  content: "\e914";
+}
+.ls-settings:before {
+  content: "\e915";
+}
+.ls-sliders:before {
+  content: "\e916";
+}
+.ls-trash:before {
+  content: "\e917";
+}
+.ls-x:before {
+  content: "\e918";
+}
