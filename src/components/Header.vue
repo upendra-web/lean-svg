@@ -7,6 +7,10 @@
     <img src="/static/img/logo.png" alt="" id="logo" @click="main = !main">
 
     <transition name="fade">
+      <span class="btn btn-primary rounded ml3" @click="startTut" v-show="!main">Tutorial</span>
+    </transition>
+
+    <transition name="fade">
       <div id="main-options" class="ml3 flex items-center flex-auto" v-show="main" style="transition: .5s">
         
         <!-- add new svg -->
@@ -47,6 +51,8 @@
 </template>
 
 <script>
+  import tut from '../assets/tut'
+
   import aOption from './support/Option'
   import {
     readSVG
@@ -54,6 +60,12 @@
 
   export default {
     store: ['bgValue', 'filename', 'oSvg', 'main', 'showMarkup', 'showOriginal', 'pasteMarkup', 'showCredits'],
+
+    data() {
+      return {
+        tut: tut()
+      }
+    },
 
     components: {
       aOption
@@ -76,6 +88,13 @@
       // for setting bkg of svg viewer
       setBg(e) {
         this.bgValue = (this.showMarkup ? this.bgValue : e.target.value);
+      },
+
+      // to start tutorial
+      startTut() {
+        this.oSvg = this.tut;
+        this.pasteMarkup = false;
+        this.main = true;
       }
     }
   }
