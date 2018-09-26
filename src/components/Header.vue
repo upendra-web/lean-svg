@@ -37,8 +37,8 @@
         <!-- set bkg of svg viewer -->
         <div id="bg-color" class="dropdown" :style="'background-color: '+ bgValue" title="Set Background of SVG Viewer">
           <div id="color-modal" class="dropdown-content flex-r p1">
-            <input type="text" name="" value="#ccc" id="bg-value" @keydown.enter="setBg">
-            <!-- <span class="ls-check btn btn-primary white ml2" @click="setBg"></span> -->
+            <input type="text" name="" value="#ccc" id="bg-value" @keydown.enter="setBg" ref="bgvalue">
+            <span class="ls-check btn btn-primary white ml2" @click="setBg"></span>
           </div>
         </div>
 
@@ -87,8 +87,11 @@
 
       // for setting bkg of svg viewer
       setBg(e) {
-        // console.log(e)
-        this.bgValue = (this.showMarkup ? this.bgValue : e.target.value);
+        console.log(e)
+        if(e.type === 'keydown')
+          this.bgValue = (this.showMarkup ? this.bgValue : e.target.value);
+        else if (e.type === 'click')
+          this.bgValue = this.$refs.bgvalue.value;
       },
 
       // to start tutorial
